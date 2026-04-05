@@ -2,66 +2,42 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Manutenção Evolutiva</title>
+  <title>Minhas Tarefas</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f6fa;
+      background: #eef2ff;
       text-align: center;
       padding: 40px;
     }
 
     h1 {
-      color: #1e3a8a;
+      color: #3730a3;
     }
 
-    .container {
-      margin-top: 40px;
-    }
-
-    .btn {
-      padding: 15px 40px;
-      border-radius: 10px;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
-      margin: 10px;
-      transition: 0.3s;
-    }
-
-    .btn-atual {
-      background: #9ca3af;
-      color: white;
-    }
-
-    .btn-meta {
-      background: #22c55e;
-      color: white;
-      box-shadow: 0 0 15px #22c55e;
-    }
-
-    .missao {
-      margin-top: 50px;
+    .card {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 300px;
+      margin: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: left;
     }
 
-    .missao h2 {
-      background: #374151;
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6; /* 👈 MUDE A COR AQUI */
       color: white;
-      padding: 10px;
-      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
-    .missao p {
-      margin: 10px 0;
+    button:hover {
+      opacity: 0.8;
     }
 
   </style>
@@ -69,23 +45,14 @@
 
 <body>
 
-  <h1>Cenário da Prática: Manutenção Evolutiva</h1>
+  <h1>Minha Lista de Tarefas</h1>
 
-  <div class="container">
-    <span>Atual →</span>
-    <button class="btn btn-atual">Comprar</button>
+  <div class="card">
+    <p>✔️ Estudar programação</p>
+    <p>✔️ Fazer atividade</p>
+    <p>✔️ Subir projeto no GitHub</p>
 
-    <span style="margin: 0 20px;">→</span>
-
-    <button class="btn btn-meta">Comprar</button>
-    <span>← Meta</span>
-  </div>
-
-  <div class="missao">
-    <h2>MISSÃO</h2>
-    <p>🔧 <strong>Desafio:</strong> Alterar a cor do botão no código.</p>
-    <p>🚫 <strong>Regra:</strong> Nenhuma intervenção manual no servidor.</p>
-    <p>🚀 <strong>Meta:</strong> Deploy automático em produção.</p>
+    <button>Concluir Tudo</button>
   </div>
 
 </body>
